@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TEST01
 {
-    class EquationSolve //Se ha creado una nueva 
+    class EquationSolve //Se ha creado una nueva clase
     {
         static public double EquationSolve2(double a, double b, double c)
         {

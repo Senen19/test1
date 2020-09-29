@@ -15,8 +15,10 @@ namespace TEST01
         }
         public static double Get3DVectorLength (double x, double y, double z)
         {
-
-
+            double aux2, lenght;
+            aux2 = x * x + y * y + z * z;
+            lenght = System.Math.Sqrt(aux2);
+            return lenght;
         }
     }
 }
