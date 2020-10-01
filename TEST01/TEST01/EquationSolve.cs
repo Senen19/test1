@@ -17,7 +17,5 @@ namespace TEST01
         }
          static public double EquationSolve1(double a, double b) => -b / a;
 
-
-
     }
 }
