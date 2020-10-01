@@ -7,6 +7,7 @@ namespace TEST01
         static void Main(string[] args)
         {
             double s1, s2, S1, S2, min1, min2, max1, max2;
+            
 
             s1 = Geometry.Get2DVectorLength(1, 1);
             System.Console.WriteLine(s1);
@@ -27,6 +28,13 @@ namespace TEST01
             System.Console.WriteLine(max1);
             max2 = Utils.GetMaxValue(1, 1);
             System.Console.WriteLine(max2);
+
+            bool even1 = Utils.IsEven(5);
+            System.Console.WriteLine(even1);
+            bool even2 = Utils.IsEven(4);
+            System.Console.WriteLine(even2);
+
+
         }
     }
 }
