@@ -32,5 +32,18 @@ namespace TEST01
             else
                 return false;
         }
+        public static bool Ejercicio3(int number)//pregunta examen
+        {
+            int i = 2;
+            while (i < number)
+            {
+                if ((number % i) == 0)
+                    return false;
+                i++;
+
+            }
+            return true;
+
+        }
     }
 }

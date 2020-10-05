@@ -34,7 +34,10 @@ namespace TEST01
             // bool even2 = Utils.IsEven(4);
             // System.Console.WriteLine(even2);
 
-            ejercicios.Ejercicio();
+            //ejercicios.Ejercicio();//Una forma de llamar al método, activa la función que llama.        
+            // ejercicios.Ejercicio2(10);
+
+            
 
 
         }
