@@ -34,13 +34,13 @@ namespace TEST01
         }
         public static bool Ejercicio3(int number)//pregunta examen
         {
-            int i = 2;
-            while (i < number)
+            int i = 2;//iniciamos el contador en 2 porque si lo iniciamos en 0 cuando
+                       // llegue a 1 dirá ya que es primo
+            while (i < number) 
             {
-                if ((number % i) == 0)
-                    return false;
+                if ((number % i) == 0) //el número que elijamos entre contador será igual a 0, entonces será primo
+                    return false;      // si esto no ocurre dará false y se incrementará
                 i++;
-
             }
             return true;
 
