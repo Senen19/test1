@@ -29,11 +29,20 @@ namespace TEST01
                 i++;
             }
         }
-        public static void Ejercicio3 (bool num1)
+        public static void Ejercicio3 (bool num1) //establecemos un nuevo void en nuestra clase 'ejercicios' para realizar
+                                                  // el ejercicio número 3, con lo que creamos una nueva clase que no devuelva nada (void).
+                                                  //Creamos una variable bool ya que el resultado de la función 'Utils.Ejercicio3'
+                                                  //nos devolverá un 'true' o 'false' dependiendo si es primo o no.
         {
-
-            num1 = Utils.Ejercicio3(5894);
-
+            num1 = Utils.Ejercicio3(6);          //En la variable tipo bool denominada num1, llamamos a la función que nos dice si un número
+                                                  //es primo o no 'Utils.Ejercicio3'. En este caso he elegido el 84, el cual se asigna 
+                                                  //al parámetro de la
+                                                  //variable number de la función que se encuentra en 'Utils'. Con ello, comenzará
+                                                  //a realizar toda la función que se haya en 'Utils' considerando a 84 como
+                                                  //la variable 'number'.
+            
+            System.Console.WriteLine(num1);       //Le pedimos que imprima/muestre el resultado de la variable num1 una vez haya
+                                                  //pasado ya por la función 'Utils.Ejercicio3' y haya comprobado si es primo o no.  
         }
 
 

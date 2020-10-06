@@ -7,6 +7,7 @@ namespace TEST01
         static void Main(string[] args)
         {
             double s1, s2, S1, S2, min1, min2, max1, max2, ejercicio;
+            bool ejercicio3;
 
 
             //s1 = Geometry.Get2DVectorLength(1, 1);
@@ -37,7 +38,14 @@ namespace TEST01
             //ejercicios.Ejercicio();//Una forma de llamar al método, activa la función que llama.        
             // ejercicios.Ejercicio2(10);
 
-            
+            ejercicios.Ejercicio3(true); //Llamamos dentro del Main a la función 'ejercicios.Ejercicio3' 
+                                         //y le pasamos como parámetro un true para indicar que es lo que nos
+                                         //deberá devolver
+
+
+
+
+
 
 
         }
