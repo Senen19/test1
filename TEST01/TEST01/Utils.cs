@@ -55,9 +55,10 @@ namespace TEST01
                                                 //la condición del if, nos habrá devuelto un valor 'true'. Por tanto, como hemos
                                                 //creado una función que debe devolver o 'true' o 'false' al ser bool, indicaremos que
                                                 //solo nos devuelva los valores true que hemos obtenido del bucle tras comprobar
-                                                //'number' de veces con el condicional if si es primo('true') o no('false'). Si 
+                                                //'number' de veces con el condicional if: si es primo('false') -un primo es un valor
+                                                //que dividido entre otro número no debe dar de resido 0- o no('true'). Si 
                                                 //indicamos que nos devuelva true, solo nos lo devolverá si la variable 'number' es
-                                                //primo.
+                                                //primo -es decir, la condición if se ha cumplido ('true') y el número introducido es primo-.
 
         }
     }
