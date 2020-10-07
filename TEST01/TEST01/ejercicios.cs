@@ -34,7 +34,7 @@ namespace TEST01
                                                   //Creamos una variable bool ya que el resultado de la función 'Utils.Ejercicio3'
                                                   //nos devolverá un 'true' o 'false' dependiendo si es primo o no.
         {
-            num1 = Utils.Ejercicio3(84);          //En la variable tipo bool denominada num1, llamamos a la función que nos dice si un número
+            num1 = Utils.Ejercicio3(5);          //En la variable tipo bool denominada num1, llamamos a la función que nos dice si un número
                                                   //es primo o no 'Utils.Ejercicio3'. En este caso he elegido el 84, el cual se asigna 
                                                   //al parámetro de la
                                                   //variable number de la función que se encuentra en 'Utils'. Con ello, comenzará
