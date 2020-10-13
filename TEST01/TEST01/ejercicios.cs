@@ -101,17 +101,28 @@ namespace TEST01
             int i = 0;
             while (i < num)
             {
-
-                if (Utils.IsEven(i) == true)                                                             //((i % 2) == 0)
+                if (Utils.IsEven(i)) //((i % 2) == 0)
                     System.Console.WriteLine(i);
                 else 
                     System.Console.WriteLine(-i);
-                
                 i++;
             }
-
         }
-
+        public static void Ejercicio10(int num)
+                
+        {
+            int a = 0;
+            int aa = 1;
+            int i = 0;
+            while (i <= num)
+            {
+                System.Console.WriteLine(a + aa);
+                int aux = a;
+                a = a + aa;
+                aa = aux;
+                i++;
+            }
+        }
 
     }
 

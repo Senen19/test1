@@ -54,10 +54,11 @@ namespace TEST01
 
             //ejercicios.Ejercicio7(30);
 
-            // ejercicios.Ejercicio8(20);
+            // ejercicios.Ejercicio8(20); Empieza en 5 y hace una cuenta regresiva en negativo
 
-            ejercicios.Ejercicio9(20);
+            //ejercicios.Ejercicio9(20);
 
+            ejercicios.Ejercicio10(20);
 
 
 
