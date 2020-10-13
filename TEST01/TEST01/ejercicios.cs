@@ -114,7 +114,7 @@ namespace TEST01
             int a = 0; //anterior
             int aa = 1; //anteanterior
             int i = 0;
-            System.Console.WriteLine(0);
+            System.Console.WriteLine(0);//imprimimos primero el 0 para tener la sucesión bien
             while (i <= num)
             {
                 System.Console.WriteLine(a + aa);//se IMPRIME la sucesión: es el anterior más el anteanterior
