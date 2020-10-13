@@ -108,7 +108,7 @@ namespace TEST01
                 i++;
             }
         }
-        public static void Ejercicio10(int num)
+        public static void Ejercicio10(int num)//fibonacci
                 
         {
             int a = 0;
@@ -116,10 +116,10 @@ namespace TEST01
             int i = 0;
             while (i <= num)
             {
-                System.Console.WriteLine(a + aa);
-                int aux = a;
-                a = a + aa;
-                aa = aux;
+                System.Console.WriteLine(a + aa);//la sucesión es el anterior más el anteanterior
+                int aux = a; //se crea una variable aux para almacenar el valor de a y no perderlo
+                a = a + aa; //a es igual al número anterior de la sucesión más en anteanterior de la situación
+                aa = aux; // el anteanterior, después de haber seguido la sucesión, pasa a ser el anterior (a) que lo almacenabamos en la variable auxiliar para no perderlo
                 i++;
             }
         }
