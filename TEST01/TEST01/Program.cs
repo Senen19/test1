@@ -37,17 +37,30 @@ namespace TEST01
             //ejercicios.Ejercicio();//Una forma de llamar al método, activa la función que llama.        
             // ejercicios.Ejercicio2(10);
 
-            int i = 2;
-            while ( i <= 30)
-            {
-                ejercicios.Ejercicio3(i);
-                i++;
-            }
-            
-            
-                                                       
+            // int i = 2;
+            //System.Console.Write("Dime hasta que número quieres calcular si es primo o no: ");
+            //int YourNumber = Convert.ToInt32(System.Console.ReadLine());
+            //while ( i <= YourNumber)
+            // {
+            //    ejercicios.Ejercicio3(i);
+            //    i++;
+            // }
 
-            
+            //ejercicios.Ejercicio4(100);
+
+            //ejercicios.Ejercicio5(50);
+
+            //ejercicios.Ejercicio6(30);
+
+            //ejercicios.Ejercicio7(30);
+
+            // ejercicios.Ejercicio8(20);
+
+            ejercicios.Ejercicio9(20);
+
+
+
+
 
 
 

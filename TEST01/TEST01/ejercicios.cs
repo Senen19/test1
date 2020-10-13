@@ -1,4 +1,7 @@
 ﻿
+using System.Runtime.Serialization;
+using System.Threading;
+
 namespace TEST01
 {
     class ejercicios
@@ -35,10 +38,79 @@ namespace TEST01
             if (num == true)
                 System.Console.WriteLine($"El número {num1} es primo");
             else
-                System.Console.WriteLine($"El número {num1} no es primo");
-                                                                            
+                System.Console.WriteLine($"El número {num1} no es primo");                                                              
+        }
+        //Ejercicio 4
+        //Hacer un programa que imprima una serie desde el 0 al 100.
+        public static void Ejercicio4(int num)
+        {
+            int i = 0;
+            while(i < num)
+            {
+               System.Console.WriteLine(i);  
+                i++;
+            }
+
+
+        }
+        //Ejercicio 5 calcular multiplos de 3.
+        public static void Ejercicio5(int num)
+        {
+            int i = 0;
+            while(i < num)
+            {
+                System.Console.WriteLine(i*3);
+                i++;
+            }
+
         }
 
+        public static void Ejercicio6(int num)
+        {
+            int i = 0;
+            while(i < num)
+            {
+                System.Console.WriteLine(i * i);
+                i++;
+
+            }
+        }
+        public static void Ejercicio7(int num)
+
+        {
+            int i = 0;
+            while (i < num)
+            {
+                System.Console.WriteLine((i * i) + 1);
+                i++;
+            }
+
+        }
+        public static void Ejercicio8(int num)
+        {
+            int i = 0;
+            while (i < num)
+            {
+                System.Console.WriteLine(5 - i);
+                i++;
+            }
+        }
+        public static void Ejercicio9(int num)
+
+        {
+            int i = 0;
+            while (i < num)
+            {
+
+                if (Utils.IsEven(i) == true)                                                             //((i % 2) == 0)
+                    System.Console.WriteLine(i);
+                else 
+                    System.Console.WriteLine(-i);
+                
+                i++;
+            }
+
+        }
 
 
     }
