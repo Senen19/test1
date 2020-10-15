@@ -117,11 +117,12 @@ namespace TEST01
             System.Console.WriteLine(0);//imprimimos primero el 0 para tener la sucesión bien
             while (i <= num)
             {
-                System.Console.WriteLine(a + aa);//se IMPRIME la sucesión: es el anterior más el anteanterior
-                int aux = a; //se crea una variable aux para almacenar el valor de a y no perderlo cuando hagamos la suma
-                a = a + aa; //a es igual al número anterior de la sucesión más el anteanterior de la situación, obteniendo así el siguiente de la sucesión
-                aa = aux; // el anteanterior, después de haber seguido la sucesión, pasa a ser el anterior (a) que lo almacenabamos en la variable auxiliar para no perderlo
-                i++; //incrementa el bucle nada más
+                System.Console.WriteLine(a + aa);//se IMPRIME la sucesión de fibonacci: es el anterior más el anteanterior
+                int aux = a;  //se crea una variable aux para almacenar el valor de a y no perderlo cuando hagamos la suma
+                a = a + aa;   //a es igual al número anterior de la sucesión más el anteanterior de la sucesión, obteniendo así el valor siguiente de la sucesión que se
+                             //almacenará en a, es decir: 0(a) + 1(aa) = 1(valor que almacenará a para seguir la sucesión)
+                aa = aux;    // el anteanterior, después de haber seguido la sucesión, pasa a ser el anterior (a) que lo almacenabamos en la variable auxiliar para no perderlo
+                i++;         //incrementa el bucle
             }
         }
 

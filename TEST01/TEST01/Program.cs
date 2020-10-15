@@ -62,6 +62,24 @@ namespace TEST01
 
 
 
+            /*
+              
+            System.Console.WriteLine("Escribe un número: ");   
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            int i = 0;
+            string asterisco = "*";                                     ******* PIRAMIDE ASTERISCOS ******
+            string aux2 = "*";
+            while (i < numero)
+            {
+                System.Console.WriteLine(asterisco);
+                asterisco = aux2 + asterisco;
+                i++;
+            }
+            
+             */
+
+
 
 
 
