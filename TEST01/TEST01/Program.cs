@@ -58,7 +58,7 @@ namespace TEST01
 
             //ejercicios.Ejercicio9(20);
 
-            ejercicios.Ejercicio10(20);
+            //ejercicios.Ejercicio10(20);
 
 
 
@@ -78,6 +78,18 @@ namespace TEST01
             }
             
              */
+
+            //int Ejercicio1 = EjerciciosExamen.Ejercicio1(8, 8);
+            //System.Console.WriteLine($"El resultado es {Ejercicio1}");
+
+            //double Ejercicio2 = EjerciciosExamen.Ejercicio2(5.3, 8.3);
+            //System.Console.WriteLine($"El resultado es:{Ejercicio2} ");
+
+            //int Ejercicio3 = EjerciciosExamen.Ejercicio3(8, 3);
+            //System.Console.WriteLine($"El número menor es {Ejercicio3}");
+
+            bool Ejercicio4 = EjerciciosExamen.Ejercicio4(8, 5);
+            System.Console.WriteLine("el primer es menor que el segundo");
 
 
 
