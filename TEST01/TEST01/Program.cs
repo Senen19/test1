@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace TEST01
 {
@@ -88,13 +89,17 @@ namespace TEST01
             //int Ejercicio3 = EjerciciosExamen.Ejercicio3(8, 3);
             //System.Console.WriteLine($"El número menor es {Ejercicio3}");
 
-            bool Ejercicio4 = EjerciciosExamen.Ejercicio4(8, 5);
-            System.Console.WriteLine("el primer es menor que el segundo");
+            //bool Ejercicio4 = EjerciciosExamen.Ejercicio4(8, 5);
+            //System.Console.WriteLine("el primer es menor que el segundo");
 
 
-
-
-
+            //System.Console.WriteLine(EjerciciosExamen.Ejercicio5("Hola", "cara", "cola"));
+            //System.Console.WriteLine(EjerciciosExamen.Ejercicio6(10, 19));
+            //System.Console.WriteLine(EjerciciosExamen.Ejercicio7(1, 1, 3));
+            //EjerciciosExamen.Ejercicio8(0);
+            //EjerciciosExamen.Ejercicio9(10);
+            //EjerciciosExamen.Ejercicio10(10);
+            EjerciciosExamen.Ejercicio11(-3);
 
 
         }
