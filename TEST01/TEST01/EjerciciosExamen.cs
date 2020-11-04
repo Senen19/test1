@@ -1,5 +1,8 @@
 ﻿
 
+using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace TEST01
 {
     class EjerciciosExamen
@@ -163,6 +166,48 @@ namespace TEST01
             for (int i = 0; i < num - 1; i++)  //Cuando tiene solo 1 instrucción, no hace falta poner las {}
                 System.Console.Write(i + ",");
             System.Console.Write(num - 1);
+        }
+
+        /*Ejercicio 12: Función que se le pase un número n e imprima una serie de asteriscos 3 = *** */
+        public static void Ejercicio12(int n)
+        {
+            for (int i = 0; i < n; i++)
+                System.Console.Write("*");
+        }
+
+        /*Ejercicio 13: Función que se le pase un número n e imprima una serie de asteriscos 5 y + = *+*+*   */
+        public static void Ejercicio13(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (i % 2 == 0) //Si es par imrpime +
+                    System.Console.Write("*");
+                else //Si no, imprime +
+                    System.Console.Write("+");
+            }
+        }
+
+
+        /*Ejercicio 14: Función que se devuelva el menor de 9 enteros, la función tiene que ocupar una sola línea */
+
+        public static int Ejercicio14 (int num1, int num2, int num3, int num4, int num5, int num6, int num7, int num8, int num9)
+        {
+            return Ejercicio7(Ejercicio7(num1, num2, num3), Ejercicio7(num4, num5, num6), Ejercicio7(num7, num8, num9)) ;
+            //Se puede llamar a otras funciones que ya hemos hecho, es un buen truco para resolver ejercicios y ahorrar tiempo
+        }
+
+
+        /*Ejercicio 15: Hacer una función que te de un valor y escriba un rectángulo de */
+
+        public static void Ejercicio15(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                for (int c = 0; c < n; c++)
+                    System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+            
         }
     }
 }
