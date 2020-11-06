@@ -99,8 +99,23 @@ namespace TEST01
             //EjerciciosExamen.Ejercicio8(0);
             //EjerciciosExamen.Ejercicio9(10);
             //EjerciciosExamen.Ejercicio10(10);
-            EjerciciosExamen.Ejercicio15(5);
+            //EjerciciosExamen.Ejercicio15(10);
+            //EjerciciosExamen.Ejercicio21(5);
 
+
+            /* while (true) //bucle infinito 
+            //animación: Primero imprime la primera línea del bucle for || Estudiar
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    EjerciciosExamen.Ejercicio21(i); //llamas a la función que imprime el rombo
+                    System.Threading.Thread.Sleep(10); //para parar el tiempo (milisegundos)
+                    System.Console.Clear(); //Hace la limpieza de pantalla
+                }
+
+            }*/
+
+            EjerciciosExamen.Ejercicio22(3);
 
         }
     }

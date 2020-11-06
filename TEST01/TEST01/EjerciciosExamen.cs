@@ -6,10 +6,10 @@ using System.ComponentModel.DataAnnotations;
 namespace TEST01
 {
     class EjerciciosExamen
-    {  
-       /*1r Ejercicio: Hacer una función a la que se le pasen dos numeros enteros
-       * y devuelva el resultado de la suma de esos dos números*/
-        public static int Ejercicio1 (int number, int number2)
+    {
+        /*1r Ejercicio: Hacer una función a la que se le pasen dos numeros enteros
+        * y devuelva el resultado de la suma de esos dos números*/
+        public static int Ejercicio1(int number, int number2)
         {
             int result = number + number2;
             return result; //se puede hacer también return number + number2; | Es más mejor
@@ -25,7 +25,7 @@ namespace TEST01
         /*3r Ejercicio: Hacer una función a la que se le pasen dos enteros
          * y devuelva el menor de ellos*/
 
-        public static int Ejercicio3 (int num1, int num2)
+        public static int Ejercicio3(int num1, int num2)
         {
             if (num1 < num2)
                 return num1;
@@ -75,7 +75,7 @@ namespace TEST01
                 return a;
             if (b < c) //una vez elminada a, solo queda comprobar b y c
                 return b;
-            else 
+            else
                 return c;
         }
 
@@ -136,13 +136,13 @@ namespace TEST01
             while (i <= num)
             {
                 System.Console.Write(i + ", ");
-                i+= 3;
+                i += 3;
             }
         }
 
         /*Ejercicio 10: Hacer una función que imprima por pantalla la siguiente serie, usando un for,
          * serie (10): 0,1,2,3,4,5,6,7,8,9*/
-         
+
         public static void Ejercicio10(int num)
         {
             for (int i = 0; i < num; i++) //Cuando tiene solo 1 instrucción, no hace falta poner las {}
@@ -190,14 +190,14 @@ namespace TEST01
 
         /*Ejercicio 14: Función que se devuelva el menor de 9 enteros, la función tiene que ocupar una sola línea */
 
-        public static int Ejercicio14 (int num1, int num2, int num3, int num4, int num5, int num6, int num7, int num8, int num9)
+        public static int Ejercicio14(int num1, int num2, int num3, int num4, int num5, int num6, int num7, int num8, int num9)
         {
-            return Ejercicio7(Ejercicio7(num1, num2, num3), Ejercicio7(num4, num5, num6), Ejercicio7(num7, num8, num9)) ;
+            return Ejercicio7(Ejercicio7(num1, num2, num3), Ejercicio7(num4, num5, num6), Ejercicio7(num7, num8, num9));
             //Se puede llamar a otras funciones que ya hemos hecho, es un buen truco para resolver ejercicios y ahorrar tiempo
         }
 
 
-        /*Ejercicio 15: Hacer una función que te de un valor y escriba un rectángulo de */
+        /*Ejercicio 15: Hacer una función que reciba un valor y escriba un rectángulo de *  */
 
         public static void Ejercicio15(int n)
         {
@@ -207,8 +207,110 @@ namespace TEST01
                     System.Console.Write("*");
                 System.Console.WriteLine();
             }
+        }
+
+        /* Ejercicio 16: Hacer una función que reciba un valor y escriba un rectángulo con* y la siguiente fila + */
+
+        public static void Ejercicio16(int num)
+        {
+            for (int i = 0; i < num; i = i + 2)
+            {
+                for (int j = 0; j < num; j++)
+                {
+                    if ((i % 2) == 0) //Si es par que imprima *
+                        System.Console.Write("*");
+                    else              //Si no es par que imprima +
+                        System.Console.Write("+");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        //Ejercicio 17: Hacer una función que reciba un valor y escriba una pirámide de * 
+
+        public static void Ejercicio17(int num)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j < i + 1; j++)
+                    System.Console.Write("*");
+            System.Console.WriteLine();
+            }
+        }
+       
+        public static void Ejercicio18(int num) //Piramide invertida de asteriscos
+                                                //Es recomendable hacer a papel como funciona la lógica del programa para buscar
+                                                //el truco / la forma de resolverlo.
+        {
+            for (int i = 0; i < num; i++)
+            {
+                int nespacios = num - i - 1; //calcula el número de espacios
+                int nasteriscos = i + 1; //calcula el número de asteriscos
+                for (int j = 0; j < nespacios; j++) //for para imprimir los espacios
+                    System.Console.Write(" ");
+                for (int f = 0; f < nasteriscos; f++) //for para imprimir los asteriscos 
+                    System.Console.Write("*");
+                System.Console.WriteLine(); //salto de línea
+            }
+        }
+
+        public static void Ejercicio19(int num) //piramide total de asteriscos vacio
+        {
+            for (int i = 0; i < num; i++) //Este for indica las veces que se va a repetir num, solo hace falta mirar num
+                                          //para saber cuantas veces se va a repetir
+            {
+                int nespacios1 = num - i - 1;        //primer int para calcular el número de espacios del principio
+                int nespacios2 = i * 2;              //segundo int para calcular el segundo número de espacios despúes del primer *
+                for (int j = 0; j < nespacios1; j++) //for para imprimir el número de espacios del principio
+                    System.Console.Write(" ");
+                System.Console.Write("*");           //al finalizar el bucle, imprime el asterisco
+                for (int f = 0; f < nespacios2; f++) //for para imprimir el segundo número de espacios
+                    System.Console.Write(" ");
+                System.Console.Write("*");           //al finalizar el segundo bucle, imprime el asterisco
+                System.Console.WriteLine();          //salto de línea
+            }
+        }
+
+        public static void Ejercicio20(int num) //El mismo ejercicio anterior pero con la piramide invertida
+        {
+            for (int i = 0; i < num; i++)
+            {
+                int nespacios1 = i;                 //Calcula el número de espacios del principio; vemos que corresponde con el valor de i
+                int nespacios2 = (num - i - 1) * 2; //calcula el número de espacios despúes del primer *, lo hemos calculado a papael
+                for (int j = 0; j < nespacios1; j++)//primer for que imprime espacios
+                    System.Console.Write(" ");
+                System.Console.Write("*");          //finaliza el bucle e imprime *
+                for (int f = 0; f < nespacios2; f++)//segundo for que imprime los segundos espacios, los de después del primer *
+                    System.Console.Write(" ");
+                System.Console.Write("*");          //finaliza el bucle e imprime *
+                System.Console.WriteLine();         //salto de línea y, después de esto, se repite de nuevo el bucle
+            }
+        }
+
+        public static void Ejercicio21(int num) //Hacer un rombo
+        {
+            Ejercicio19(num);//llamas a la función que ya has hecho que hace la piramide vacia
+            Ejercicio20(num);//llamas a la función que ya has hecho que hace la piramide invertida
+        }
+
+        /*Ejercicio28: Hacer una función que devuelva 2 elevado a n, siendo n el parámetro que recibe la función*/
+        public static int Ejercicio22(int num)
+        {
             
+            int exponente = num;
+            int result = 1;
+            for (int i = 0; i < exponente; i++)
+                result *= 2;
+
+            return result;
+
+
+
+
         }
     }
 }
-        //Usamos un for = cuando conocemos el numero de elementos que vamos a imprimir, cuando NO, mejor un while
+
+       
+         //Usamos un for cuando conocemos el numero de elementos que vamos a imprimir, cuando NO, mejor un while
+         //MUY RECOMENDABLE calcular primero el algoritmo a papel para luego pasarlo a la función
