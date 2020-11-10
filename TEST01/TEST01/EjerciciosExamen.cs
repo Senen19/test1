@@ -360,10 +360,9 @@ namespace TEST01
         {
             int j = 0;
             for (int i = 1; i <= num; i++)
-                j += i;
+                j += i; //se suma el valor j + la i y se va haciendo el sumatorio | NO PONER RETURN dentro del bucle, si no la primera vez que entre al bucle se saldrá al recibir un return
             return j;
         }
-        
     }
 }
 
