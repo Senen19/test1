@@ -2,6 +2,8 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace TEST01
 {
@@ -293,21 +295,75 @@ namespace TEST01
             Ejercicio20(num);//llamas a la función que ya has hecho que hace la piramide invertida
         }
 
-        /*Ejercicio28: Hacer una función que devuelva 2 elevado a n, siendo n el parámetro que recibe la función*/
+        /*Ejercicio22: Hacer una función que devuelva 2 elevado a n, siendo n el parámetro que recibe la función*/
         public static int Ejercicio22(int num)
         {
-            
             int exponente = num;
             int result = 1;
             for (int i = 0; i < exponente; i++)
                 result *= 2;
-
             return result;
-
-
-
-
         }
+
+        /*Ejercicio23: Hacer una función que imrpima la bandera americana*/
+        //f = filas   c = columnas
+        public static void Ejercicio23() //no dice que le pases ningún parametro
+        {
+            for (int f = 0; f < 10; f++) //filas
+            {
+                for (int c = 0; c < 70; c++) //columnas
+                {
+                    if (0 <= c && c <= 4 && 0 <= f && f <= 2) //imprime los + de la primera zona |Entre 0 (c) 0 (f) y 2 (f) 2 (c)
+                    {
+                        int flag = f + c;    //Sumo las filas y columnas | Busco hacer + (espacio) + (espacio) + (espacio)
+                        if ((flag % 2) == 0) //Si es par, que imprima un + (espacio) + (espacio) +
+                            System.Console.Write("+");
+                        else                 //Si no es par, que imprima (espacio) + (espacio) + (espacio)
+                            System.Console.Write(" ");
+                    }
+                    else if ((f % 4) < 2)   //Si el resto de f entre 4 es menor que 2, imprime *
+                        System.Console.Write("*");
+                    else                    //Si el resto de f entre 4 NO es menor que 2, imprime (espacio)
+                        System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+        }
+            /*Hacer una función que devuelva la distancia entre dos puntos 2D*/
+        public static double Ejercicio24(double x1, double y1, double x2, double y2)
+        {
+            double vx = x2 - x1;
+            double vy = y2 - y1;
+            return System.Math.Sqrt((vx * vx) + (vy * vy));
+        }
+
+        /*Hacer una función que imprima la bandera de Japón*/
+        public static void Ejercicio25()
+        {
+            for (int f = 0; f < 15; f++)
+            {
+                for (int c = 0; c < 70; c++)
+                {
+                    if (c == 0 || c == 69 || f == 0 || f == 14) //Imprime las esquinas de la bandera
+                        System.Console.Write("*");
+                    else if (Ejercicio24(35, 7, c, f) <= 5) //llama a la función de distancia 2D y calcula la distancia atendiendo al radio que le digo que es 5
+                        System.Console.Write("o");
+                    else
+                        System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        /*Implementa una función que devuelva el sumatorio de un número*/
+        static public int Ejercicio26(int num)
+        {
+            int j = 0;
+            for (int i = 1; i <= num; i++)
+                j += i;
+            return j;
+        }
+        
     }
 }
 

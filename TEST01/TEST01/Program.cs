@@ -115,7 +115,8 @@ namespace TEST01
 
             }*/
 
-            EjerciciosExamen.Ejercicio22(3);
+            System.Console.WriteLine(EjerciciosExamen.Ejercicio26(4));
+            
 
         }
     }
